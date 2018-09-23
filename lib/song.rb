@@ -37,7 +37,7 @@ class Song
     song_exist = self.all.detect do |v|
       v.name = song_string_name
       if song_exist == nil
-        song.create
+        song.create_by_name
       end
     end
   end
