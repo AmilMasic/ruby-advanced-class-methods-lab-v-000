@@ -35,6 +35,6 @@ class Song
     song = self.new
     song.name = song_string_name
     song.save
-    @@all << song
+    # @@all << song
   end
 end
