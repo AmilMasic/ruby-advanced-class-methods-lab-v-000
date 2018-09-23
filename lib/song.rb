@@ -34,12 +34,9 @@ class Song
   end
 
   def self.find_or_create_by_name(song_string_name)
-    song = self.new
-    song.name = song_string_name
-    if self.find_by_name(song_string_name) == nil
-      self.create
-    else   
-    song
-  end
+    song_exist = self.all.detect do |v|
+      v.name = song_string_name
+      if song_exist == nil
+        song.create
   end
 end
