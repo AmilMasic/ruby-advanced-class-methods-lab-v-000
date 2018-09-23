@@ -37,8 +37,8 @@ class Song
     song = self.new
     song.name = song_string_name
     if self.find_by_name(song_string_name) == nil
-      self
-    else
+      song
+    else 
       self.create
     end
     song
