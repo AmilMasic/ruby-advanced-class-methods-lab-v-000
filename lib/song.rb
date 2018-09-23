@@ -50,7 +50,7 @@ class Song
     did_i_find_it = self.all.detect {|x| x.name == find_this_song}
     if did_i_find_it == nil
       # song.create_by_name
-      s = self.new
+      song = self.new
       song.name = find_this_song
       song.save
       song
