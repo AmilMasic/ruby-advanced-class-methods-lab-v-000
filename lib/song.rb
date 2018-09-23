@@ -38,5 +38,6 @@ class Song
       v.name = song_string_name
       if song_exist == nil
         song.create
+      end
   end
 end
