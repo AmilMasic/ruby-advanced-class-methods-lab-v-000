@@ -39,5 +39,6 @@ class Song
       if song_exist == nil
         song.create
       end
+    end
   end
 end
