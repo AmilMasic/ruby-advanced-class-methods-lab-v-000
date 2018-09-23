@@ -20,7 +20,7 @@ class Song
   #   # @@all << self
   # end
   def self.create
-    song = self
+    song = self.new
     song.save
   end
 end
