@@ -24,4 +24,8 @@ class Song
     song.save
     song
   end
+
+  def new_by_name(song)
+    song.name = song
+  end
 end
