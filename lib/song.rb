@@ -36,4 +36,5 @@ class Song
     song.name = song_string_name
     song
     @@all << song
+  end
 end
