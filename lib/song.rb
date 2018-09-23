@@ -44,7 +44,7 @@ class Song
   #   end
   # end
 
-  def self.alfabetical
+  def self.alphabetical
     @@all.sort_by {|a| a}
   end
 
