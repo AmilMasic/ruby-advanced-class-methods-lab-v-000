@@ -30,4 +30,10 @@ class Song
     song.name = song_string_name
     song
   end
+
+  def self.create_by_name(song_string_name)
+    song = self.new
+    song.name = song_string_name
+    song
+    @@all << song
 end
