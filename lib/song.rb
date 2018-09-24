@@ -39,6 +39,7 @@ class Song
     else
       self.create_by_name(song_string_name)
     end
+  end
 
   def self.alphabetical
     @@all.sort_by {|a| a.name}
